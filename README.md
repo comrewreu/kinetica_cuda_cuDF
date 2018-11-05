@@ -1,4 +1,4 @@
-# kinetica_pyGDF
+# kinetica_cuda_cuDF
 
 # Requirements
 *nvidia-docker plugin
@@ -9,10 +9,10 @@
 At a shell with appropriate privileges issue the following command:
 
 On nvidia-docker v1:
-nvidia-docker run --privileged --rm -p 8080:8080 -p 8088:8088 -p 9191:9191 -p 9292:9292 rewreu/kinetica_pygdf:latest
+nvidia-docker run --privileged --rm -p 8080:8080 -p 8088:8088 -p 9191:9191 -p 9292:9292 rewreu/kinetica_cuda_cudf:latest
 
 On nvidia-docker v2:
-docker run --privileged --rm --runtime=nvidia -p 8080:8080 -p 8088:8088 -p 9191:9191 -p 9292:9292 rewreu/kinetica_pygdf:latest
+docker run --privileged --rm --runtime=nvidia -p 8080:8080 -p 8088:8088 -p 9191:9191 -p 9292:9292 rewreu/kinetica_cuda_cudf:latest
 
 Once the container is fully launched, take your favorite browser on the host machine and enter the URL:
 
